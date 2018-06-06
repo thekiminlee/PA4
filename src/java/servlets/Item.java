@@ -80,6 +80,7 @@ public class Item extends HttpServlet {
                             strResponse += sc.nextLine();
                         }
                     }
+                    sc.close();
                     JSONParser parser = new JSONParser();
                     JSONObject obj = (JSONObject)parser.parse(strResponse);
                     
@@ -109,9 +110,7 @@ public class Item extends HttpServlet {
                     //conn.disconnect();
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
-                } finally {
-                    sc.close();
-                }
+                } 
         
     }
     

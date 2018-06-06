@@ -65,12 +65,11 @@
                         out.println("<td>" + obj.get("name") + "<br>Type: " + obj.get("type") + "</td>");
                         out.println("<td>$" + obj.get("price") + "</td></tr>");
                     }
+                    sc.close();
                     
                 } catch(IOException e) {
                     System.out.println(e.getMessage());
-                } finally {
-                    sc.close();
-                }
+                } 
             %>
             <jsp:include page="/tracking" flush="false"/>
             </table>
