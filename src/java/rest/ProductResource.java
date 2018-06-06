@@ -25,7 +25,8 @@ public class ProductResource {
         ArrayList<Products> products = ProductService.getAllProducts();
          
         if(products == null) {
-            return Response.status(Response.Status.NOT_FOUND).build();
+            Response.ok().entity("Error here").build();
+            //return Response.status(Response.Status.NOT_FOUND).build();
         }
         GenericEntity<ArrayList<Products>> list = new GenericEntity<ArrayList<Products>>(products) {};
          
