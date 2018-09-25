@@ -1,9 +1,7 @@
-URL: http://centaurus-3.ics.uci.edu:2069/PA4
-
 ***README modified after deployment.***
 
 
-Ki Min Lee (kmlee3, 47872069)
+Author : Ki Min Lee 
 
 PEDAL WORLD: first element in the menu bar
 	- This is also the main welcome page for the website. It does not have anything else other than menu bar and brand logo. 
